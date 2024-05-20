@@ -25,7 +25,9 @@ pack.o :pack.c
 .PHONY: clean pristine
 
 
-.test: 
+test: testfs
+	./testfs
+
 
 clean: 
 	rm -f *.o
